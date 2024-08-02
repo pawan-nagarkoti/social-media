@@ -6,7 +6,6 @@ export default forwardRef(function Button({ type = "button", className = "", chi
       <button type={type} className={`btn ${className}`} style={style} onClick={onClick} ref={ref} {...props}>
         {children}
       </button>
-      <button>kdkd kdkd</button>
     </>
   );
 });
