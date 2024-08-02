@@ -1,0 +1,244 @@
+.list-group {
+  height: 16rem;
+  overflow: auto;
+}
+
+// layout page css start
+/* Layout.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.main-content {
+  margin-left: 17%;
+  // margin-right: 15%;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.follow-list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+/* Ensure body takes up full height and removes default margin */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+// layout page css end
+
+.instagram-post {
+  border: 1px solid #dbdbdb;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.post-image {
+  width: 100%;
+  height: 20rem;
+}
+
+.post-actions {
+  display: flex;
+  padding: 10px;
+}
+
+.action-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.post-likes,
+.post-caption,
+.post-comments {
+  padding: 0 10px 10px;
+}
+
+.comment {
+  margin-top: 5px;
+}
+
+// create post
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.post-container {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.image-upload {
+  margin-bottom: 20px;
+}
+
+#file-input {
+  display: none;
+}
+
+.upload-placeholder {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #efefef;
+  border: 2px dashed #dbdbdb;
+  cursor: pointer;
+}
+
+.selected-image {
+  width: 100%;
+  height: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+
+// scroll bar
+
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* The track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* The handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px;
+}
+
+/* The handle (thumb) when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+.preview-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.multiple-preview-image-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.postcontainer-flex-box {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+// styles.scss
+.carousel-item {
+  position: relative;
+
+  .overlay-carousel-shadow {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.carousel-inner-post-slider {
+  height: 12rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.top-position {
+  position: relative;
+  top: 0.3rem;
+}
